@@ -1,3 +1,4 @@
+properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/thinkdifferent0628/webhooks.git/'], gitLabConnection(''), [$class: 'GitlabLogoProperty', repositoryName: ''], pipelineTriggers([githubPush()])])
 node {
  	// Clean workspace before doing anything
     deleteDir()
